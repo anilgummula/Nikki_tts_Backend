@@ -37,7 +37,7 @@ app.add_middleware(
     allow_origins=[
         "http://localhost:5173",
         "http://localhost:3000",
-        "https://nikki-tts.netlify.app",
+        "https://verdant-pony-595efc.netlify.app",
     ],
     allow_credentials=True,
     allow_methods=["*"],
