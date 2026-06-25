@@ -22,16 +22,29 @@ from pathlib import Path
 # ─── App setup ────────────────────────────────────────────────────────────────
 app = FastAPI(title="N.I.K.K.I TTS Studio API", version="2.0.0")
 
+# app.add_middleware(
+#     CORSMiddleware,
+#     allow_origins=[
+#     "http://localhost:3000",
+#     "http://localhost:5173",
+#     ],
+#     allow_credentials=True,
+#     allow_methods=["*"],
+#     allow_headers=["*"],
+# )
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-    "http://localhost:3000",
-    "http://localhost:5173",
+        "http://localhost:5173",
+        "http://localhost:3000",
+        "https://nikki-tts.netlify.app",
     ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+
 
 BASE_DIR = Path(__file__).resolve().parent
 
