@@ -36,6 +36,8 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "https://verdant-pony-595efc.netlify.app",
+        "https://nikkittsstudio.online",
+        "https://www.nikkittsstudio.online",
         "http://localhost:5173",
         "http://localhost:3000"
     ],
